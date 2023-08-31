@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+<head>
+  <title>Madlibs</title>
+</head>
+<body>
+  <h1>Create a Madlib</h1>
+
+  <div>
+    <form action="/story">
+        {% for question in prompts %}
+            {{ question }}: <input name="{{ question }}">
+        {% endfor %}
+        <button>Submit</button>
+    </form>
+  </div>
+</body>
+</html>
